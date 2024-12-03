@@ -1,6 +1,6 @@
 import sys
-# path = sys.argv[1]
-with open('tempInput.txt') as f:
+path = sys.argv[1]
+with open(path) as f:
     text = f.readlines()
 
 # Getting Reports Ready
