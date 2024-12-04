@@ -1,7 +1,7 @@
 import sys
 import re
-# path = sys.argv[1]
-with open('tempInput.txt') as f:
+path = sys.argv[1]
+with open(path) as f:
     text = f.read()
 
 # Getting regex pattern ready
@@ -12,7 +12,6 @@ def mul(a,b):
     return int(a) * int (b)
 # Getting sum in single line
 comb = re.findall(pattern,text)
-print(comb)
 e = 1
 d=0
 for func in comb:
